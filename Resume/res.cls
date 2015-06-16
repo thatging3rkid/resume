@@ -242,7 +242,7 @@
   {\namefont\@name}
   \vskip 2pt
   \fullline
-  \vskip 2pt
+  \vskip 9pt
   % where do you live?
   \@ifundefined{@addressone}{%
     % do nothing
@@ -285,7 +285,7 @@
 \newdimen\resumewidth
 
 \resumewidth=7.3in
-\sectionskip=3.5ex plus 1ex minus -.2ex % values stolen from LaTeX
+\sectionskip=2.4ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
 		     \sectionwidth=#1

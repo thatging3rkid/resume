@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1434418434 "resume.tex" "resume.pdf" "resume" 1434418434
+["pdflatex"] 1434421470 "resume.tex" "resume.pdf" "resume" 1434421470
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1428273606 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1428273604 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1428273604 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -18,9 +18,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1428273613 31669 df537245012f3e5f05bdc55644b7a3df ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1430022629 1511116 6afba5c7986be878b03e33fb5b714626 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1430022520 7204457 fc8a8ad1caf1b5234eb431b36dc7a2c5 ""
-  "res.cls" 1434417453 25252 98ce9a93f6f20f7356a8132627dcd665 ""
+  "res.cls" 1434418662 25252 de9e6494bc92f59e7f3f1de40bbb997f ""
   "resume.aux" 1426379216 8 a94a2480d3289e625eea47cd1b285758 ""
-  "resume.tex" 1434418433 4434 14b1e491e2826ebb9ab1c31edc3237dc ""
+  "resume.tex" 1434421469 5954 464f982d66bcec221a49fe0c8ea9ae25 ""
   (generated)
   "resume.log"
   "resume.pdf"
