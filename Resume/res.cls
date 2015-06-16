@@ -284,7 +284,7 @@
 \newskip\sectionskip
 \newdimen\resumewidth
 
-\resumewidth=6.5in
+\resumewidth=7.3in
 \sectionskip=3.5ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
@@ -782,12 +782,13 @@
 
 \@secpenalty = -500
 \topmargin 0pt
+%\leftmargin 1in
 \headheight 0pt
 \headsep 0pt
 \textheight 10.5in
 \parindent 0pt
 \topmargin -0.5in
-\oddsidemargin 0pt
+\oddsidemargin -0.5in
 \evensidemargin 0pt
 \marginparwidth 0pt
 \parindent 0pt
