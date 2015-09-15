@@ -248,11 +248,17 @@
     % do nothing
   }{%
     \leavevmode\hbox to \textwidth
-      {\hfill\vbox
+      {
+		  \vbox
 		  {\hbox{\@addressone}
 		   \hbox{\@addresstwo}
 		   \hbox{\@addressthree}
 		  }%
+		  \hfill
+		  \vbox
+		  {
+			\hbox{\@websiteone}
+			\hbox{\@websitetwo}}
       }\par
   }
 \endgroup}
@@ -506,6 +512,14 @@
   		{\@ifundefined{@addresstwo}
 			{\def\@addresstwo{#1}}
   			{\def\@addressthree{#1}}}}
+\def\website#1{
+  \@ifundefined{@websiteone}
+  	{\def\@websiteone{#1}}
+  		{\@ifundefined{@websitetwo}
+			{\def\@websitetwo{#1}}
+              %{\def\@websitethree{#1}}
+		}
+	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % if you want to print your name and address is a slightly
