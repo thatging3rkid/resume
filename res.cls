@@ -252,13 +252,13 @@
 		  \vbox
 		  {\hbox{\@addressone}
 		   \hbox{\@addresstwo}
-		   \hbox{\@addressthree}
+		  \hbox{\@websiteone}
+		   %\hbox{\@addressthree}
 		  }%
 		  \hfill
-		  \vbox
-		  {
-			\hbox{\@websiteone}
-			\hbox{\@websitetwo}}
+		  %\\[-4em]
+		  %\vbox
+			%\hbox{\@websitetwo}}
       }\par
   }
 \endgroup}
