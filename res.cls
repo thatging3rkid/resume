@@ -248,19 +248,20 @@
     % do nothing
   }{%
     \leavevmode\hbox to \textwidth
-      {
-		  \vbox
-		  {\hbox{\@addressone}
-		   \hbox{\@addresstwo}
-		  \hbox{\@websiteone}
-		   %\hbox{\@addressthree}
-		  }%
-		  \hfill
-		  %\\[-4em]
-		  %\vbox
-			%\hbox{\@websitetwo}}
-      }\par
-  }
+	{
+		\vtop
+		{
+			\hbox{\@addressone}
+			\hbox{\@addresstwo}
+			\hbox{\@addressthree}
+		}%
+		\hfill
+		\vtop
+		{
+			\hbox{\@websiteone}
+			\hbox{\@websitetwo}}
+		}\par
+	}
 \endgroup}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -796,10 +797,11 @@
 
 \@secpenalty = -500
 \topmargin 0pt
+%\botmargin 0.5in
 %\leftmargin 1in
 \headheight 0pt
 \headsep 0pt
-\textheight 10.5in
+\textheight 11in
 \parindent 0pt
 \topmargin -0.5in
 \oddsidemargin -0.5in
