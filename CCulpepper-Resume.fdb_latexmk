@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1473256441 "CCulpepper-Resume.tex" "CCulpepper-Resume.pdf" "CCulpepper-Resume" 1473256442
+["pdflatex"] 1473964616 "CCulpepper-Resume.tex" "CCulpepper-Resume.pdf" "CCulpepper-Resume" 1473964617
   "/home/chris/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1440629994 1511291 1fb18a6ea0ff974b26549b11351d15a5 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1471317721 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1471317719 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -19,7 +19,7 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1471317729 31669 df537245012f3e5f05bdc55644b7a3df ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1471887277 7252863 5a7823cecbc0908cd83b026b27ff02a3 ""
   "CCulpepper-Resume.aux" 1471536170 8 a94a2480d3289e625eea47cd1b285758 ""
-  "CCulpepper-Resume.tex" 1473256438 7958 b6482c8af5ac820234a49cedc2b2029e ""
+  "CCulpepper-Resume.tex" 1473964615 8634 beb54ef95e2ab8a6a59d157b392818b1 ""
   "res.cls" 1471536170 25495 5f093f1419311be2bf5911bd506446e3 ""
   (generated)
   "CCulpepper-Resume.log"
