@@ -1,13 +1,23 @@
-all: CCulpepper-Resume.tex 
+all: CCulpepper-Resume.pdf CCulpepper-CoverLetter.pdf
+
+CCulpepper-Resume.pdf: CCulpepper-Resume.tex
 	#latex resume.tex
 	#dvipdf resume.dvi
-	latexmk -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc
+	latexmk -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc CCulpepper-Resume.tex
 	
-view: all
-	latexmk -pvc -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc
+CCulpepper-CoverLetter.pdf: CCulpepper-CoverLetter.tex
+	#latex resume.tex
+	#dvipdf resume.dvi
+	latexmk -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc CCulpepper-CoverLetter.tex
+
+viewResume: CCulpepper-Resume.tex
+	latexmk -pvc -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc CCulpepper-Resume.tex
+
+viewLetter: CCulpepper-CoverLetter.tex
+	latexmk -pvc -pdflatex='pdflatex -file-line-error -synctex=1' -pdf -r /home/chris/.latexmkrc CCulpepper-CoverLetter.tex
 
 clean: 
-	rm CCulpepper-Resume.aux
-	rm CCulpepper-Resume.dvi
-	rm CCulpepper-Resume.log
-	rm CCulpepper-Resume.pdf
+	- rm *.pdf
+	- rm *.aux
+	- rm *.dvi 
+	- rm *.log

@@ -251,16 +251,26 @@
 	{
 		\vtop
 		{
-			\hbox{\@addressone}
-			\hbox{\@addresstwo}
-			\hbox{\@addressthree}
+			\hbox{\@email}
+			\hbox{\@phone}
 		}%
 		\hfill
 		\vtop
 		{
-			\hbox{\@websiteone}
-			\hbox{\@websitetwo}}
-		}\par
+			\hbox{\@addressone}
+			\hbox{\@addresstwo}
+			\hbox{\@addressthree}
+		}%
+		\@ifundefined{@websiteone}{}
+		{
+		\hfill
+			\vtop
+			{
+				\hbox{\@websiteone}
+				\hbox{\@websitetwo}}
+			}
+		}
+		\par
 	}
 \endgroup}
 
@@ -509,10 +519,19 @@
 
 \def\address#1{
   \@ifundefined{@addressone}
-  	{\def\@addressone{#1}}
-  		{\@ifundefined{@addresstwo}
-			{\def\@addresstwo{#1}}
-  			{\def\@addressthree{#1}}}}
+  	{
+		\def\@addressone{#1}
+	}
+  	{
+		\@ifundefined{@addresstwo}
+			{
+				\def\@addresstwo{#1}
+			}
+  			{
+				\def\@addressthree{#1}
+			}
+	}
+}
 \def\website#1{
   \@ifundefined{@websiteone}
   	{\def\@websiteone{#1}}
@@ -521,6 +540,20 @@
               %{\def\@websitethree{#1}}
 		}
 	}
+\def\email#1{
+  \@ifundefined{@email}
+  	{
+		\def\@email{#1}
+	}
+	{}
+}
+\def\phone#1{
+  \@ifundefined{@phone}
+  	{
+		\def\@phone{#1}
+	}
+	{}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % if you want to print your name and address is a slightly
