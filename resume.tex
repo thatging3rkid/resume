@@ -4,7 +4,7 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{multicol}
 %\usepackage[top=.5in, bottom=.5in, left=.5in, right=.5in]{geometry}
-
+\usepackage{textcomp}
 
 \begin{document}
 \setlength\columnsep{-30pt}
@@ -22,8 +22,51 @@
  \multicolsep{2pt}
 
 \section{OBJECTIVE} % CAREER OBJECTIVE for real resume
-	To get a job as a Residence Advisor, which will allow me to assist residents with their transition to college life and help residents succeed during their time at RIT.
- 
+	To be selected as a Residence Advisor, which will allow me to assist residents with their transition to college life and help residents succeed during their time at RIT.
+
+\section{EDUCATION} 
+	{\sl First-year Computer Engineering Student}, GPA: 3.26 \hfill {\sl August 2016 - Current}\\
+        % \sl will be bold italic in New Century Schoolbook (or
+	    % any postscript font) and just slanted in
+		% Computer Modern (default) font
+                Rochester Institute of Technology, Rochester NY
+				\begin{multicols}{2}
+					\begin{itemize}
+						\itemsep -2pt
+						%\item[] example entry
+						\item[] Computer Science I and II
+						\item[] Calculus I and II
+						%\item[] Intro to Psychology
+						%\item[] Intro to Philosophy
+						%\item[] Intro to International Relations
+						%\item[] Intro to Computer Engineering
+						\item[] Multivariable Calculus						
+					\end{itemize}
+					%Currently taking:
+					\begin{itemize}
+						\itemsep -2pt
+						\item[] Mechanics of Programming
+						
+						\item[] Digital Systems Design I
+						\item[] Physics I
+						%\item[] Writing Seminar
+					\end{itemize}
+				\end{multicols}
+ 	
+ 	%\vspace{-8pt}
+	%{\sl High School Diploma,} GPA: 3.6\\
+	%			Bacon Academy, Colchester CT,
+	%			Received June 2016
+	%			\begin{multicols}{2}
+	%				\begin{itemize}
+	%					%\item[] example entry
+	%					\item[] AP Human Geography
+	%					\item[] AP Computer Science AB
+	%					\item[] AP Calculus AB
+	%					\item[] AP Physics 1
+	%				\end{itemize}
+	%			\end{multicols}
+
 \section{LEADERSHIP EXPERIENCE} % change to experience for non-ra resume
 	%{\sl Test Engineer Co-op} \hfill {\sl January 2016 - May 2016}\\
 	%	Space Exploration Technologies, Hawthorne CA
@@ -35,24 +78,21 @@
 	%\vspace{-5pt}
 
 	{\sl FIRST Robotics} \hfill {\sl October 2009 - Current}\\
-		Multiple Teams, in Colchester CT or Rochester NY
+		Multiple Teams, in Colchester CT and around Rochester NY
 		\begin{itemize}
-			\itemsep -2pt
-			\item \textit{October 2009 - December 2011} 
-			\item Was a student on the local FIRST Lego League teams 
-			\item Led the team in 2011, and we won an award and went to States
-			\item \textit{September 2012 - April 2016}
-			\item Was a student on FIRST Robotics Competition Team 1699
-			\item Started as a programmer and electrician on the controls team
-			\item Worked on pit crew (got the robot ready for the next match) in 2013
-			\item Got chosen to be a member of Drive Team in 2014
-			\item Started voulenteering at events in April 2014
-			\item Ran successfully for controls lead in early 2015
-			\item Led the design team for the grabber in 2015
+			\item \textit{October 2009 - December 2011}: was a student on the local FIRST Lego League team
+			\item \textit{September 2012 - April 2016}: was a student on FIRST Robotics Competition Team 1699
+			\item Worked on a team of high school students to create a robot in a limited time span
+			%\item Worked on pit crew (prepared the robot ready for the next match) in 2013
+			%\item Selected as a member of Drive Team in 2014 % and started voulenteering at events in April 2014
+			\item Led the controls team starting in early 2015 and led the design team for the grabber in 2015
+			%\item Received the Chairman's Award from Team 1699 in 2015, which is an award given to students that are exceptional role models and leaders 
 			\item Ran successfully for co-captain of the team in late 2015
-			\item Under my lead, the controls team won the Innovation in Controls Award in 2016
-			\item \textit{April 2016 - Current}
+			%\item Moved the team code repository to GitHub in order to increase efficency and collaboration when writing code
+			\item Under my lead, the controls team won the Innovation in Controls Award in 2016%, and the team won the Gracious Professionalism Award in 2016
+			\item \textit{April 2016 - Current}:
 			\item Mentored multiple FIRST teams, taught programming to elementary and high school students
+			\item Continued voulenteering at FIRST events
 		\end{itemize}
 
 \section{PROJECTS}
@@ -68,21 +108,40 @@
 	
 	{\sl Swerve Code for Team 1699}
 		\begin{itemize} 
-			\itemsep -2pt
-			\item Wrote code for a swerve drivetrain, which is a drivetrain where all wheels are independently steered and driven
-			\item Incoroprated PID loops in order to make the steering motions smoother and to automatically adjust for drift.
-			\item Though we never got the physical modules to test the code, the code can be found on GitHub.
+			\itemsep 0pt
+			%\item Status: \textit{Completed, Awaiting Testing}
+			\item Wrote the majority of the code for a swerve drivetrain (and accompanying libraries), which is a complex drivetrain where all wheels can turn 360\textdegree and are independently steered and driven.
+			%\item PID loops were used in order to make motions smoother and to automatically adjust for drift.
+			%\item Though we never got the physical modules to test the code, the code can be found on the Team 1699 GitHub.
 		\end{itemize}
 
+	%\vspace{-8pt}
+	%{\sl ini-reader and ini-editor for Team 1699}
+	%	\begin{itemize}
+	%		\itemsep 0pt
+	%		\item Status: \textit{Completed, Updated Often}
+	%		\item Rewrote code to read configuration files stored on the robot. The original project was written in LabView, but it was rewritten in Java, and features were added in the process.
+	%		\item The code has been used on the 2016 and 2017 competition robots, and in the swerve and autonomous projects.
+	%		\item The ini-editor was designed to make the editing of configuration files on the robot easier, and the simulator was written to show how a configuration file would be interpreted.
+	%		\item The editor was written in Python with Tk and the simulator was written in Java with JavaFX, and all code can be found on the Team 1699 GitHub.
+	%	\end{itemize}
+
 	\vspace{-8pt}
-	{\sl ini-reader and ini-editor for Team 1699}
+	{\sl RIT FIRST's Imagine RIT Project}
 		\begin{itemize}
-			\itemsep -2pt
-			\item Rewrote code to read configuration files stored on the robot. The original project was written in LabView, but we moved to Java.
-			\item Besides rewriting the project, I added to it, adding lots of aditional functions to the original project.
-			\item Currently, the code has been used on the 2016 and 2017 robot and in the swerve code.
-			\item The ini-editor was written to make the editing of configuration files on the robot easier, and the simulator was written to show how a configuration file is read into memory.
-			\item The user interface was written in Python with TK and the simulator was written in Java with JavaFX, and all code can be found on the Team 1699 GitHub.
+			\itemsep 0pt
+			%\item Status: \textit{Work in Progress}
+			\item Collaborated with other engineers and programmers to build small robots that play a game, similar to the game played by FIRST Robotics Competition teams, that are presented at Imagine RIT 
+			%\item The robots use Arduinos, wireless modules, and servos to move around the field and manipulate game elements, while the field controller is a more powerful Arduino that controls the robots with user inputs and controls LEDs around the field.
+			%\item The robots use Arduino C++, while the field controller uses Arduino C++ on the Arduino and Java for the user interface with the field controller.
+		\end{itemize}
+	\vspace{-8pt}
+	{\sl WPILibPi}
+		\begin{itemize}
+			\itemsep 0pt
+			%\item Status: \textit{Work in Progress, Early in Development}
+			\item Wrote 
+			\item more
 		\end{itemize}
 
 \section{AWARDS \& SKILLS} 
@@ -91,10 +150,9 @@
 			\begin{itemize}
 				\itemsep -2pt
 				%\item[] example entry
-				\item[] A+ Certified
-				\item[] Network Pro Certified
+				\item[] A+ and Network Pro Certified
 				\item[] Chairman's Award from FIRST Team 1699
-				\item[] filler
+				\item[] Dean's List Nominee on FIRST Team 1699
 
 			\end{itemize}
 		\end{multicols}	
@@ -105,59 +163,16 @@
 				\itemsep -2pt
 				%\item[] example entry
 				\item[] C and C++
-				\item[] Turbo Pascal
+				%\item[] Turbo Pascal
 				\item[] Python
 				\item[] Java
-				\item[] nginx and WordPress
+				%\item[] nginx and WordPress
 				\item[] \LaTeX
 				\item[] Microsoft Office
 				\item[] Windows and Linux
 			\end{itemize}
 		\end{multicols}
 
-\section{EDUCATION} 
-	{\sl Bachelor of Science,} Computer Engineering, GPA: 3.28\\
-        % \sl will be bold italic in New Century Schoolbook (or
-	    % any postscript font) and just slanted in
-		% Computer Modern (default) font
-                Rochester Institute of Technology, Rochester NY, 
-				Expected June 2021 %\\%[-5ex]
-				\begin{multicols}{2}
-					\begin{itemize}
-						\itemsep -2pt
-						%\item[] example entry
-						\item[] Computer Science I and II
-						\item[] Calculus I and II
-						\item[] Intro to Psychology
-						\item[] Intro to Philosophy
-						\item[] Intro to International Relations
-						\item[] Intro to Computer Engineering						
-					\end{itemize}
-					Currently taking:
-					\begin{itemize}
-						\itemsep -2pt
-						\item[] Mechanics of Programming
-						\item[] Multivariable Calculus
-						\item[] Digital Systems Design I
-						\item[] Physics I
-						\item[] Writing Seminar
-					\end{itemize}
-				\end{multicols}
- 	
-	{\sl High School Diploma,} GPA: 3.6(add to me)\\
-				Bacon Academy, Colchester CT,
-				Recived June 2016
-				\begin{multicols}{2}
-					\begin{itemize}
-						\itemsep -2pt
-						%\item[] example entry
-						\item[] AP Human Geography
-						\item[] AP Computer Science AB
-						\item[] AP Calculus AB
-						\item[] AP Physics 1
-					\end{itemize}
-				\end{multicols}
-\vspace{8pt}
 \section{COMMUNITY \\ SERVICE}  
 	%{\sl	Assistant Scoutmaster at Boy Scout Troop 88, North Adams, MA}
 	%\begin{itemize}  \itemsep -2pt %reduce space between items
@@ -169,21 +184,19 @@
 	{\sl Mentoring FIRST Robotics Teams}
 	\begin{itemize}  
 		\itemsep -2pt
-		\item Mentored FIRST Team 1699 in Colchester CT, teaching programming and electronics
-		\item Mentored FIRST Lego League <fill> in Rochester NY, teaching programming and team values
+		\item Mentored FIRST Team 1699 in Colchester CT, teaching programming and electronics and FIRST Lego League 6149 in Rochester NY, teaching programming and team values
 	\end{itemize}
 
+	\vspace{-8pt}
 	{\sl Voulenteering at FIRST Events}
 	\begin{itemize}
 		\itemsep -2pt
-		\item Started Voulenteering in 2014 at the Hartford District Event doing field reset.
-		\item Voulenteered at the 2015 Waterbury District Event doing scoring.
-		\item Voulenteered at the 2016 Connecticut State Championship doing field reset.
-		\item Signed up to voulenteer at the 2017 Finger Lakes Regional doing field reset.
+		\item Worked in a team in order to keep the event running and on-schedule
+		\item Voulenteered at multiple FIRST events doing field reset, scoring and field setup/takedown
 	\end{itemize}
 
-\section{PERSONAL INTERESTS \\ AND HOBBIES}             
-	Member of RIT FIRST Robotics Club\\
+%\section{PERSONAL INTERESTS \\ AND HOBBIES}             
+%	Member of RIT FIRST Robotics Club\\
 
 \end{resume}
 
