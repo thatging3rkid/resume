@@ -5,3 +5,5 @@
 *.swp
 *.aux
 *.bak
+
+*.docx # for temporary document storage
