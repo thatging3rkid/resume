@@ -1,0 +1,52 @@
+% coverletter.tex
+%
+% A cover letter for my resume
+%
+% @author Connor Henley, @thatging3rkid
+% @author Chris Culpepper, @cculpapper
+% @note see res.cls for more authors
+
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{multicol}
+%\usepackage[top=.5in, bottom=.5in, left=.5in, right=.5in]{geometry}
+\usepackage{textcomp}
+\usepackage{chngpage} % rip changepage?
+
+\begin{document}
+\setlength\columnsep{-30pt}
+%\setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}% 50% of original values
+\name{Connor F. Henley}
+\email{} % school email
+\phone{} % personal email
+\address{} % address line one
+\address{} % address line two
+\website{https://connorhenley.engineer}
+\website{} % phone number
+
+\begin{resume}
+ \setlength
+ \multicolsep{2pt}
+ \begin{adjustwidth}{-92pt}{0pt}
+ \vspace{10pt}
+
+\noindent
+Dear Hiring Professional, \\
+
+\noindent
+I am a second year student at the Rochester Institute of Technology in the Computer Engineering program. I am seeking a co-op position in the computer engineering field and I am available beginning May 15th through the end of December 2018. \\
+
+\noindent
+Through my coursework and personal projects, I found that I have a strong programming background, especially in C and Java. I have taken multiple programming courses, like the Mechanics of Programming and Introduction to Software Engineering and I have lots of personal software projects that have helped me grow my background. Additionally, I have taken or are taking classes like Digital System Design I \& II, Circuits I and Computer Organization to gain experience working with hardware. I also have strong interpersonal and leadership skills, which I gained during my time in FIRST robotics, where I was the co-captain of my FIRST Robotics Competition team for a year, and the lead for the controls sub-team for two years, including the year we won the Innovation in Controls award. My enclosed resume provides more details of my qualifications. \\
+
+\noindent
+I believe that I am qualified for your co-op position and I know that I would be a valuable asset to your organization. I can be contacted by email at me [at] connorhenley [dot] engineer. Thank you in advance for considering my application. \\
+
+Sincerely, \\
+Connor F. Henley
+
+\end{adjustwidth}
+\end{resume}
+\end{document}
