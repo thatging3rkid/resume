@@ -7,3 +7,5 @@
 *.bak
 
 *.docx # for temporary document storage
+header.txt
+chenley* # ignore production files
