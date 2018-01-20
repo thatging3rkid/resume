@@ -2,16 +2,22 @@
 #
 # author: Connor Henley, @thatging3rkid
 
+# latex compiler defines
+LATEXC = latexmk
+LATEXC_FLAGS = -pdf
+
+RM_COMMAND = rm -f
+
 # rule for building all pdfs
 all: resume.pdf coverletter.pdf
 
 # rule for building the (unofficial) resume pdf
 resume.pdf: resume.tex
-	latexmk resume.tex -pdf
+	$(LATEXC) resume.tex $(LATEXC_FLAGS)
 
 # rule for building the (unofficial) cover letter pdf
 coverletter.pdf: coverletter.tex
-	latexmk coverletter.tex -pdf
+	$(LATEXC) coverletter.tex $(LATEXC_FLAGS)
 
 # rule to run spell check
 spell:
@@ -32,18 +38,19 @@ full: chenley-resume.pdf chenley-coverletter.pdf
 # rule for building a full resume
 chenley-resume.pdf:
 	python3 fullmake.py resume.tex header.txt chenley-resume.temp.tex
-	latexmk chenley-resume.temp.tex -pdf
+	$(LATEXC) chenley-resume.temp.tex $(LATEXC_FLAGS)
 	mv chenley-resume.temp.pdf chenley-resume.pdf
-	rm chenley-resume.temp*
+	$(RM_COMMAND) chenley-resume.temp*
 
 # rule for building a full cover letter
 chenley-coverletter.pdf:
 	python3 fullmake.py coverletter.tex header.txt chenley-coverletter.temp.tex
-	latexmk chenley-coverletter.temp.tex -pdf
+	$(LATEXC) chenley-coverletter.temp.tex $(LATEXC_FLAGS)
 	mv chenley-coverletter.temp.pdf chenley-coverletter.pdf
-	rm chenley-coverletter.temp*
+	$(RM_COMMAND) chenley-coverletter.temp*
 
 clean:
-	rm *.aux
-	rm *.dvi
-	rm *.log
+	$(RM_COMMAND) *.aux
+	$(RM_COMMAND) *.log
+	$(RM_COMMAND) *.bbl
+	$(RM_COMMAND) *.blg

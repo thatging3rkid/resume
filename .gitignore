@@ -1,3 +1,4 @@
+# Ignore build files
 *.log
 *.fls
 *.fdb_latexmk
@@ -9,6 +10,5 @@
 *.docx # for temporary document storage
 header.txt
 
-# ignore production files
-chenley-resume.pdf
-chenley-coverletter.pdf
+# Ignore production files
+chenley-* 
