@@ -8,4 +8,7 @@
 
 *.docx # for temporary document storage
 header.txt
-chenley* # ignore production files
+
+# ignore production files
+chenley-resume.pdf
+chenley-coverletter.pdf

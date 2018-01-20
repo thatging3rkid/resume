@@ -36,6 +36,13 @@ chenley-resume.pdf:
 	mv chenley-resume.temp.pdf chenley-resume.pdf
 	rm chenley-resume.temp*
 
+# rule for building a full cover letter
+chenley-coverletter.pdf:
+	python3 fullmake.py coverletter.tex header.txt chenley-coverletter.temp.tex
+	latexmk chenley-coverletter.temp.tex -pdf
+	mv chenley-coverletter.temp.pdf chenley-coverletter.pdf
+	rm chenley-coverletter.temp*
+
 clean:
 	rm *.aux
 	rm *.dvi
