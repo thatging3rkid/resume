@@ -13,6 +13,11 @@
 \usepackage{multicol}
 %\usepackage[top=.5in, bottom=.5in, left=.5in, right=.5in]{geometry}
 \usepackage{textcomp}
+\usepackage{siunitx}
+
+% force PDF size to letter
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
 
 \begin{document}
 \setlength\columnsep{-30pt}
@@ -28,170 +33,123 @@
 %@replend
 
 \begin{resume}
- \setlength
- \multicolsep{2pt}
+	 \setlength
+	 \multicolsep{2pt}
 
-\section{OBJECTIVE:} % CAREER OBJECTIVE for real resume
-	%To be selected as a Resident Advisor, which will allow me to assist residents with their transition to college life and help them succeed during their time at RIT.
-	To obtain an co-op in the Computer Engineering field during the summer (May 16th to August 13th) of 2018, which will allow me to gain experience in the field and apply topics learned in class.
+	\section{OBJECTIVE:} % CAREER OBJECTIVE for real resume
+		To obtain a co-op in the Computer Engineering field for summer 2020 (May 18th to August 21st), which will allow me to gain more experience and apply topics learned in class.
 
-\section{EDUCATION:} 
-	\textbf{Rochester Institute of Technology} \hfill Rochester, NY \\
-	Master of Science in Computer Engineering \hfill Expected May 2021 \\
-	Bachelor of Science in Computer Engineering, Minor in Computer Science \hfill Expected May 2021\\ 
-	GPA: 3.53
-
-\section{COURSES:}
+	\section{EDUCATION:} 
+		\textbf{Rochester Institute of Technology} \hfill Rochester, NY\\
+		Master of Science in Computer Engineering \hfill Expected May 2021 
 		\begin{multicols}{2}
-		\setlength\columnsep{1pt}
+			\setlength\columnsep{1pt}
 			\begin{itemize}
-				\setlength{\itemindent}{-25pt}
+				\setlength{\itemindent}{-10pt}
+				\item[] Data \& Communication Networks
+				\item[] \hspace{10pt} Digital Integrated Circuit Design
+			\end{itemize}
+		\end{multicols}
+		\vspace{-8pt}
+
+		Bachelor of Science in Computer Engineering \hfill Expected May 2021\\ 
+		Minor in Computer Science, Immersion in ASL and Deaf Cultural Studies \hfill GPA: 3.61
+
+		\begin{multicols}{2}
+			\setlength\columnsep{1pt}
+			\begin{itemize}
+				\setlength{\itemindent}{-10pt}
 				%\itemsep -2pt
 				%\item[] example entry
-				\item[] Assembly Language Programming
-				\item[] Circuits I
-				\item[] Computer Organization
-				\item[] Digital Systems Design I \& II
-				\item[] \hspace{12.5pt} Introduction to Software Engineering
-				\item[] \hspace{12.5pt} Mechanics of Programming
-				\item[] \hspace{12.5pt} Multi-variable Calculus
-				\item[] \hspace{12.5pt} University Physics I \& II
+				\item[] Applied Programming
+				\item[] Computer Organization \& Architecture
+				\item[] Digital Signal Processing
+				\item[] \hspace{10pt} Digital Systems Design I \& II
+				\item[] \hspace{10pt} Interface \& Digital Electronics
+				\item[] \hspace{10pt} Operating Systems
 			\end{itemize}
 		\end{multicols}
 
-\section{SKILLS:}
+	\section{SKILLS:}
 
-	\textbf{Software:} Altera Quartus, Arduino IDE, Cura, Git, Keil uVision, Linux, Microsoft Office, Windows \\
-	\textbf{Programming Languages:} ARM Assembly, C, Java, LabView, \LaTeX, Python 3, VHDL \\
-	\textbf{Hardware:} 3D Printer, Multimeter, Oscilloscope, Signal Generator, Soldering
+		\textbf{Software:} Altera Quartus, Cura, Git, Keil \si{\micro}\hspace{-.5pt}Vision, Linux, Microsoft TFS, PSPICE, Visual Studio\\
+		\textbf{Programming Languages:} C, C\#, Java, LabVIEW, \LaTeX, Matlab, Python 3, VHDL \\
+		\textbf{Hardware:} 3D Printer, Multi-meter, Oscilloscope, Signal Generator, Soldering
 
-% 		\begin{multicols}{2}
-%			\begin{itemize}
-%				\setlength{\itemindent}{-25pt}
-%				%\itemsep -2pt
-%				%\item[] example entry
-%				\item[] ARM Assembly
-%				\item[] C
-%				\item[] Java
-%				\item[] Microsoft Office
-%				\item[] \hspace{12.5pt} Python
-%				%\item[] nginx and WordPress
-%				\item[] \hspace{12.5pt} \LaTeX
-%				\item[] \hspace{12.5pt} VHDL
-%				\item[] \hspace{12.5pt} Windows and Linux
-%			\end{itemize}
-%		\end{multicols}
+	\section{PROJECTS \\AND LABS:}
 
-\section{PROJECTS \\AND LABS:}
+		%Arduino Clock
+		%\begin{itemize}
+		%	\item Created an internet-enabled clock using a microcontroller, TFT screen, Ethernet module, C++ code, and a custom 3D printed case
+		%	%\item Working on a redesign that will use a different display technology, improved Ethernet module, and integrate a real-time clock
+		%\end{itemize}
+		%\vspace{-10pt}
 
-	%{\sl ini-reader and ini-editor for Team 1699}
-	%	\begin{itemize}
-	%		\itemsep 0pt
-	%		\item Status: \textit{Completed, Updated Often}
-	%		\item Rewrote code to read configuration files stored on the robot. The original project was written in LabView, but it was rewritten in Java, and features were added in the process.
-	%		\item The code has been used on the 2016 and 2017 competition robots, and in the swerve and autonomous projects.
-	%		\item The ini-editor was designed to make the editing of configuration files on the robot easier, and the simulator was written to show how a configuration file would be interpreted.
-	%		\item The editor was written in Python with Tk and the simulator was written in Java with JavaFX, and all code can be found on the Team 1699 GitHub.
-	%	\end{itemize}
+		Flour Programming Language
+		\begin{itemize} 
+			\item Designed and implementing (the lexer, tokenizer and preprocessor are functional) the top-half of a compiler for a C-with-classes programming language, which will generate LLVM IR
+		\end{itemize}
+		\vspace{-10pt}
 
-	Arduino Clock
-	\begin{itemize}
-		\item Created a internet-enabled clock using an Arduino Uno, TFT screen, Ethernet module, C++ code, and a custom 3D printed case
-	\end{itemize}
-	\vspace{-10pt}
+		NXP Cup for Interface \& Digital Electronics
+		\begin{itemize}
+			\item Wrote software to autonomously drive a model car around a track as fast as possible
+			\item Interfaced with various sensors and used different control theory methodologies
+		\end{itemize}
+		\vspace{-10pt}
 
-	RIT FIRST's ImagineRIT Project
-	\begin{itemize}
-		\item Collaborated with other engineers and programmers to build small robots that are driven by attendees of ImagineRIT 
-		\item Led the redesign of the project for ImagineRIT 2018
-	\end{itemize}
-	\vspace{-10pt}
+		RIT FIRST ImagineBots
+		\begin{itemize}
+			\item Led a project to redesign our table-top robots, which are driven by attendees of ImagineRIT 
+			\item Collaborated with other students to design the architecture, write firmware and application software, as well as design some of the circuity used in the control system
+		\end{itemize}
 
-	Swerve Code for FRC (FIRST Robotics Competition) Team 1699
-	\begin{itemize} 
-		\item Programmed a swerve drive-train (and accompanying libraries), which is a complex drive base where all wheels can turn 360\textdegree \hspace{.5pt} and are independently steered and driven.
-		%\item PID loops were used in order to make motions smoother and to automatically adjust for drift.
-	\end{itemize}
-	\vspace{-10pt}
+	\section{EXPERIENCE:}
 
-	WebCheckers for Intro to Software Engineering
-	\begin{itemize}
-		\item Worked in a team of students to complete a web application for playing checkers (including an AI and game spectating)
-		\item Utilized Java, git, Spark micro-webframework, Apache Maven, and JUnit
-	\end{itemize}
-	%\vspace{-10pt}
+		Computer Engineering Firmware Co-op \hfill Aug 2018 - Dec 2018, May 2019 - Aug 2019\\
+		Diebold Nixdorf, North Canton OH
+		\begin{itemize}
+			%\item Worked with the Firmware team of the Module and Systems Engineering department on debugging tools and automated firmware testing.
+			\item Maintained and improved a firmware debugging tool which was used by team members daily
+			\item Wrote automated firmware tests in C\# and participated in Agile software development
+		\end{itemize}
+		\vspace{-8pt}
 
-\section{EXPERIENCE:}
+		Grader for Department of Computer Science\\
+		Rochester Institute of Technology, Rochester NY
+		\begin{itemize}
+			\item Graded C programs of students in a Linux environment \hfill Aug 2017 - May 2018
+			\item Graded Java projects using IntelliJ and Java 12 \hfill Sept 2019 - Present
+			\item Collaborated with other graders and the professor to ensure fair grading of all students
+		\end{itemize}
 
-	Grader for Department of Computer Science \hfill Aug 2017 - Present\\
-	Rochester Institute of Technology, Rochester NY
-	\begin{itemize}
-		\item Graded Mechanics of Programming programs (written in C) of students in a Linux environment
-		\item Collaborated with another grader and the professor to ensure fair grading of all students
-	\end{itemize}
+	\section{AWARDS:}
+		\begin{itemize}
+			\setlength{\itemindent}{-15pt}
+			\item A+ and Network Pro Certified
+			\item Chairman's Award and Dean's List Nominee from FRC Team 1699
+			\item Dean's List from Kate Gleason College of Engineering, Spring 2017 through Spring 2019
+			%\item Honors from Bacon Academy
+		\end{itemize}
 
-%	FIRST Robotics \hfill Oct 2009 - Present\\
-%	Colchester CT and around Rochester NY
-%	\begin{itemize}
-%		\item Co-captain on FRC Team 1699 \hfill Sept 2012 - Apr 2016
-%		\item Directed the local FIRST Lego League (FLL) team \hfill Oct 2009 - Dec 2011
-%	\end{itemize}
-%
-%	Public Relations for RIT FIRST \hfill May 2017 - Present\\
-%	Rochester NY
-%	\begin{itemize}
-%		\item Coordinated events and mentorship for FIRST teams near RIT
-%		\item Worked with other members of the Execuitive Board to ensure that everything ran smoothly
-%	\end{itemize}
+	\section{ACTIVITIES AND HOBBIES:}
 
-\section{AWARDS:}
-	\begin{itemize}
-		\setlength{\itemindent}{-15pt}
-		\item A+ and Network Pro Certified
-		\item Chairman's Award from FRC Team 1699
-		\item Dean's List Nominee from FRC Team 1699
-		\item Dean's List from Kate Gleason College of Engineering, Spring 2017
-		%\item Honors from Bacon Academy
-	\end{itemize}
+		FIRST Robotics \hfill Oct 2009 - Present
+		\begin{itemize}
+			\item Volunteered at events to keep the event running smoothly \hfill Apr 2014 - Present
+			\item Elected to co-captain position on FRC Team 1699 \hfill Sept 2012 - May 2016
+			\item Directed the local FLL (FIRST Lego League) team \hfill Oct 2009 - Dec 2011
+		\end{itemize}
+		\vspace{-8pt}
 
+		RIT FIRST Robotics Club\hfill Sept 2016 - Present
+		\begin{itemize}
+			\item Mentored various local FIRST robotics teams (FRC Team 3838 and local FLL teams), assisting with programming, electronics, team building, and game analysis
+			\item Elected for the Club Administration as the President \hfill May 2019 - Present
+		\end{itemize}
 
-\section{ACTIVITIES AND HOBBIES:}
-
-	FIRST Robotics \hfill Oct 2009 - Present
-	\begin{itemize}
-		\item Volunteered at events to keep the event running smoothly \hfill Apr 2014 - Present
-		\item Elected to co-captain position on FRC Team 1699 \hfill Sept 2012 - May 2016
-		\item Directed the local FLL (FIRST Lego League) team \hfill Oct 2009 - Dec 2011
-	\end{itemize}
-
-	RIT FIRST Robotics Club\hfill Sept 2016 - Present
-	\begin{itemize}
-		\item Mentored local FIRST robotics teams, assisting with programming, electronics, team building, and game analysis
-		\item Elected for the Executive Board in the Public Relations position \hfill May 2016 - Present
-	\end{itemize}
-
-	3D Printing Enthusiast \\
-	BrickHack 3 Hacker \hfill Feb 11 and 12 2017
-
-%\section{COMMUNITY SERVICE:}  
-%
-%	Mentoring FIRST Robotics Teams \hfill Sept 2016 - Present
-%	\begin{itemize}
-%		\item Mentored FRC Team 1699 in Colchester CT and FLL (FIRST Lego League) 6149 in Rochester NY
-%	\end{itemize}
-%
-%	Volunteering at FIRST Events \hfill Apr 2014 - Present
-%	\begin{itemize}
-%		\item Worked in a team in order to keep the event running and on-schedule
-%		\item Volunteered at multiple FIRST events doing field reset, scoring and field setup/takedown
-%	\end{itemize}
-%
-%\section{CLUBS AND HOBBIES:}
-%	\begin{itemize}
-%		\item BrickHack 3 Hacker
-%		\item 3D Printing Enthusiast 
-%	\end{itemize}
-%
+		3D Printing Enthusiast \\
+		%BrickHack 3 Hacker \hfill Feb 11 and 12 2017
+		Amateur Radio Technician
 \end{resume}
-
 \end{document}
