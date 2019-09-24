@@ -1,3 +1,3 @@
 # resume
 
-My LaTeX resume.
+My resume, built using LaTeX.
