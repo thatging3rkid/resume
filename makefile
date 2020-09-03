@@ -50,10 +50,11 @@ chenley-coverletter.pdf: coverletter.tex
 	$(RM_COMMAND) chenley-coverletter.temp*
 
 clean:
-	$(RM_COMMAND) *.aux
-	$(RM_COMMAND) *.log
-	$(RM_COMMAND) *.bbl
-	$(RM_COMMAND) *.blg
-	$(RM_COMMAND) *.fls
-	$(RM_COMMAND) *.fdb_latexmk
-	$(RM_COMMAND) *.pdf
+	#$(RM_COMMAND) *.aux
+	#$(RM_COMMAND) *.log
+	#$(RM_COMMAND) *.bbl
+	#$(RM_COMMAND) *.blg
+	#$(RM_COMMAND) *.fls
+	#$(RM_COMMAND) *.fdb_latexmk
+	#$(RM_COMMAND) *.pdf
+	latexmk -C
