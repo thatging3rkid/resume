@@ -36,14 +36,14 @@ spell-coverletter:
 full: chenley-resume.pdf chenley-coverletter.pdf
 
 # rule for building a full resume
-chenley-resume.pdf: resume.tex
+chenley-resume.pdf: resume.tex header.txt
 	python3 fullmake.py resume.tex header.txt chenley-resume.temp.tex
 	$(LATEXC) chenley-resume.temp.tex $(LATEXC_FLAGS)
 	mv chenley-resume.temp.pdf chenley-resume.pdf
 	$(RM_COMMAND) chenley-resume.temp*
 
 # rule for building a full cover letter
-chenley-coverletter.pdf: coverletter.tex
+chenley-coverletter.pdf: coverletter.tex header.txt
 	python3 fullmake.py coverletter.tex header.txt chenley-coverletter.temp.tex
 	$(LATEXC) chenley-coverletter.temp.tex $(LATEXC_FLAGS)
 	mv chenley-coverletter.temp.pdf chenley-coverletter.pdf
