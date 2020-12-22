@@ -13,11 +13,18 @@
 \usepackage{multicol}
 %\usepackage[top=.5in, bottom=.5in, left=.5in, right=.5in]{geometry}
 \usepackage{textcomp}
-\usepackage{chngpage} % rip changepage?
+\usepackage{changepage}
+\usepackage{hyperref} % should go last, does URLs
 
 % set PDF size to letter
 \pdfpagewidth 8.5in
 \pdfpageheight 11in
+
+% setup URLs to be blue colored with no box
+\hypersetup{
+	colorlinks=true,
+	urlcolor=cyan
+}
 
 \begin{document}
 \setlength\columnsep{-30pt}
@@ -28,43 +35,43 @@
 \phone{} % personal email
 \address{} % address line one
 \address{} % address line two
-\website{https://connorhenley.engineer}
+\website{\url{https://cfh.sh}}
 \website{} % phone number
 %@replend
 
-\begin{resume}
- \setlength
- \multicolsep{2pt}
- \begin{adjustwidth}{-92pt}{0pt}
- \vspace{10pt}
+	\begin{resume}
+		\setlength
+		\multicolsep{2pt}
+		\begin{adjustwidth}{-92pt}{0pt}
+		\vspace{10pt}
 
-\noindent
-Dear Hiring Professional, \\
+		\noindent
+		Dear Hiring Professional, \\
 
-\noindent
-I am a fourth year student at the Rochester Institute of Technology (RIT) in the Computer Engineering Dual Degree (BS/MS) program, seeking a co-op position in the computer engineering field between mid-May and mid-August 2020. \\
+		\noindent
+		I am a fourth year student at the Rochester Institute of Technology (RIT) in the Computer Engineering Dual Degree (BS/MS) program, seeking a co-op position in the computer engineering field between mid-May and mid-August 2020. \\
 
-\noindent
-Through my coursework and personal projects, I found that I have developed strong skills in software and hardware development. In my programming courses, I worked on multiple projects that enhanced my problem-solving skills, teamwork skills, and programming skills. For example, in my Introduction to Software Engineering class, we learned modern software development techniques (Agile) and applied the concepts by working on a group project, the WebCheckers project. Furthermore, in my engineering courses, I studied analog and digital electronics, with an emphasis on computer hardware, in which I learned about basic analog and digital circuitry, VHDL and reconfigurable computing, CPU design, operating system concepts, and embedded systems programming. \\
+		\noindent
+		Through my coursework and personal projects, I found that I have developed strong skills in software and hardware development. In my programming courses, I worked on multiple projects that enhanced my problem-solving skills, teamwork skills, and programming skills. For example, in my Introduction to Software Engineering class, we learned modern software development techniques (Agile) and applied the concepts by working on a group project, the WebCheckers project. Furthermore, in my engineering courses, I studied analog and digital electronics, with an emphasis on computer hardware, in which I learned about basic analog and digital circuitry, VHDL and reconfigurable computing, CPU design, operating system concepts, and embedded systems programming. \\
 
-\noindent
-Moreover, I have worked on several personal projects outside of class to further my knowledge. Since middle school, I have been involved in the FIRST robotics program, which is a program for encouraging people to get interested in science, technology, engineering and math (STEM) through competitive robotics. In 6th grade, I joined the FIRST Lego League (FLL) team and brought my team to the state championship for the first time in 8th grade. I then went on to the FIRST Robotics Competition team in high school, where I led the controls sub-team and was the co-captain of the team my senior year. During my time on the team, I learned a lot about the software design process, good documentation, and using version control. Once at RIT, I have continued to be involved in the FIRST community by joining the RIT FIRST Alumni Association. Within the club, I am a member of the volunteering subteam, where we help out at local FRC and FLL events around Rochester and a member of the mentoring subteam, where we mentor local FIRST teams like FRC 3838 and various FLL teams. Additionally, I am a member of the subteam that works on a project for the Imagine RIT creativity and innovation festival, where we build a scaled down version of FRC from the ground up, where I have learned a lot about debugging a complex project and working in a multidisciplinary team. Currently, I am the president of the club, meaning that I lead all the club subteams and had to ensure that they are running successfully, as well as working with the rest of the executive board to run club activities and fundraisers successfully. \\
+		\noindent
+		Moreover, I have worked on several personal projects outside of class to further my knowledge. Since middle school, I have been involved in the FIRST robotics program, which is a program for encouraging people to get interested in science, technology, engineering and math (STEM) through competitive robotics. In 6th grade, I joined the FIRST Lego League (FLL) team and brought my team to the state championship for the first time in 8th grade. I then went on to the FIRST Robotics Competition team in high school, where I led the controls sub-team and was the co-captain of the team my senior year. During my time on the team, I learned a lot about the software design process, good documentation, and using version control. Once at RIT, I have continued to be involved in the FIRST community by joining the RIT FIRST Alumni Association. Within the club, I am a member of the volunteering subteam, where we help out at local FRC and FLL events around Rochester and a member of the mentoring subteam, where we mentor local FIRST teams like FRC 3838 and various FLL teams. Additionally, I am a member of the subteam that works on a project for the Imagine RIT creativity and innovation festival, where we build a scaled down version of FRC from the ground up, where I have learned a lot about debugging a complex project and working in a multidisciplinary team. Currently, I am the president of the club, meaning that I lead all the club subteams and had to ensure that they are running successfully, as well as working with the rest of the executive board to run club activities and fundraisers successfully. \\
 
-\noindent
-Furthermore, I am continuing to learn about working with embedded systems, hardware, and software by building and modifying 3D printers. One of my personal projects was building a 3D printer from scratch, where I got to apply what I learned in the classroom. I also learned more about hardware and software when I had to debug issues on my printer, like print quality defects and clogging. \\
+		\noindent
+		Furthermore, I am continuing to learn about working with embedded systems, hardware, and software by building and modifying 3D printers. One of my personal projects was building a 3D printer from scratch, where I got to apply what I learned in the classroom. I also learned more about hardware and software when I had to debug issues on my printer, like print quality defects and clogging. \\
 
-\noindent
-Furthermore, my experiences in the FIRST robotics programs taught me the importance of leadership, communication, and teamwork, which are one of the three important aspects of a successful organization. As I mentioned above, I was the lead of the controls team for three years and I led the team to win the Innovation in Controls Award. Additionally, I was elected to the co-captain position my senior year, and led the team to the district championship for the first time since it's introduction in 2014. These positions also taught me a lot about how to divide work, manage people, and communicate better in a small group. Using the skills I gained in FIRST robotics, I found myself leading group projects in the diverse RIT community. \\
+		\noindent
+		Furthermore, my experiences in the FIRST robotics programs taught me the importance of leadership, communication, and teamwork, which are one of the three important aspects of a successful organization. As I mentioned above, I was the lead of the controls team for three years and I led the team to win the Innovation in Controls Award. Additionally, I was elected to the co-captain position my senior year, and led the team to the district championship for the first time since it's introduction in 2014. These positions also taught me a lot about how to divide work, manage people, and communicate better in a small group. Using the skills I gained in FIRST robotics, I found myself leading group projects in the diverse RIT community. \\
 
-\noindent
-All these experiences enhanced my knowledge in computing and engineering, but they have also improved my ability to work effectively in a fast paced, mission focuses environment with people from diverse backgrounds. In addition, my multiple interactions with the diverse RIT and FIRST robotics community have enhanced my verbal communication and interpersonal skills to be effective in a diverse discourse community. \\
+		\noindent
+		All these experiences enhanced my knowledge in computing and engineering, but they have also improved my ability to work effectively in a fast paced, mission focuses environment with people from diverse backgrounds. In addition, my multiple interactions with the diverse RIT and FIRST robotics community have enhanced my verbal communication and interpersonal skills to be effective in a diverse discourse community. \\
 
-\noindent
-I believe that I am qualified for your co-op position and I know that I would be a valuable asset to your organization. I would appreciate the opportunity to discuss my qualifications in more detail. \\
+		\noindent
+		I believe that I am qualified for your co-op position and I know that I would be a valuable asset to your organization. I would appreciate the opportunity to discuss my qualifications in more detail. \\
 
-Sincerely, \\
-Connor F. Henley
+		Sincerely, \\
+		Connor F. Henley
 
-\end{adjustwidth}
-\end{resume}
+		\end{adjustwidth}
+	\end{resume}
 \end{document}
